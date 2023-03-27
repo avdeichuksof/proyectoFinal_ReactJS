@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
+
+.cartItem{
+    width: 50%;
+    background-color: #44290f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.cartItem img{
+    width: 80%;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.cartItem .cartItemBody{
+    color: #FEFAE0;
+    display: block;
+    padding: 10px;
+}
+
+.cartItemBody p{
+    margin: 4px;
+    text-align: left;
+}
+
+.cartItemBody .deleteBtn{
+    margin: 10px auto;
+    display: flex;
+    text-align: center;
+    border: 1px solid #FEFAE0;
+    color: #FEFAE0;
+}
+.cartItemBody .deleteBtn:hover{
+    background: none;
+    opacity: 0.5;
+}

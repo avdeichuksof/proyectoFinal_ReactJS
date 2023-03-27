@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
+
+.footer{
+    width: 100%;
+    height: 90px;
+    background-color: #466D0B;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.box_container {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 0.5fr;
+    grid-gap: 15px;
+    padding: 5px 0px;
+}
+
+.box_container .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.box h2 {
+    display: block;
+    color: #FEFAE0;
+    margin: 15px;
+    font-family: "Prompt", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.box .redesSociales a {
+    display: inline-block;
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: #FEFAE0;
+    font-size: 1.2rem;
+    margin: 5px;
+    background-color: #588417;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 300ms ease;
+}
+
+.redesSociales a:hover {
+    color: #093C09;
+}
+
+.box p{
+    color: #FEFAE0;
+    font-weight: 100;
+}
+
+.copy_container {
+    width: 100%;
+    padding: 5px;
+    color: #FEFAE0;
+    height: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy_container p {
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}

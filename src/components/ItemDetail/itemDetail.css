@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
+
+.cardDetail{
+    font-family: 'Prompt', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 50%;
+    height: fit-content;
+    background-color: #44290f;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 110px;
+}
+
+.imgDetail{
+    width: 100%;
+    padding: 10px;
+    height: auto;
+}
+
+.bodyDetail{
+    display: block;
+    color: #FEFAE0;
+    text-align: center;
+}

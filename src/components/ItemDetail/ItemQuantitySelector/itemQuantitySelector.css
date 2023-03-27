@@ -1,0 +1,37 @@
+.counter {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+.selector{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.selector button{
+    display: inline-block;
+    background-color: #FEFAE0;
+    width: 1.5rem;
+    text-align: center;
+    margin: 10px;
+}
+.selector button:hover{
+    background-color: #44290f;
+    color: #FEFAE0;
+    border: 1px solid #FEFAE0;
+}
+.selector .cantidad{
+    display: inline;
+}
+
+.btnAdd{
+    background-color: #FEFAE0;
+    width: fit-content;
+    display: block;
+    margin: 10px;
+}
+.btnAdd:hover{
+    border: 1px solid #FEFAE0;
+    background-color: #44290f;
+}

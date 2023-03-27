@@ -1,0 +1,63 @@
+.icon {
+    width: 30px;
+    height: 25px;
+    margin: 10px 20px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.icon span {
+    background-color: #fff;
+    position: absolute;
+    border-radius: 2px;
+    transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+    width: 100%;
+    height: 2px;
+}
+
+.icon span:nth-child(1) {
+    top: 0px;
+    left: 0px;
+}
+
+.icon span:nth-child(2) {
+    top: 12px;
+    left: 0px;
+}
+
+.icon span:nth-child(3) {
+    bottom: 0px;
+    left: 0px;
+}
+
+.icon:not(.open):hover span:nth-child(1) {
+    transform: scaleY(1.2);
+    left: -5px;
+}
+
+.icon:not(.open):hover span:nth-child(2) {
+    transform: scaleY(1.1);
+}
+
+.icon:not(.open):hover span:nth-child(3) {
+    transform: scaleY(1.2);
+    left: 5px;
+}
+
+.icon.open span:nth-child(1) {
+    transform: rotate(45deg) scaleX(0.7);
+    top: 13PX;
+    left: -8px;
+}
+
+.icon.open span:nth-child(2) {
+    transform: scale(0);
+    transition-duration: 50ms
+}
+
+.icon.open span:nth-child(3) {
+    transform: rotate(-45deg) scaleX(0.7);
+    top: 13PX;
+    left: 6px;
+}

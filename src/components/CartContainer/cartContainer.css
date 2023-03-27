@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
+
+.cartContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+h2{
+    font-family: "Prompt", sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+.cartContainer p{
+    display: block;
+    margin: 10px auto;
+}
+
+.btnContainer{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.btnContainer button{
+    width: 100px;
+}
