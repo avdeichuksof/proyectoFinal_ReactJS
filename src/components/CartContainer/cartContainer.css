@@ -20,15 +20,15 @@ h2{
 }
 
 .btnContainer{
-    width: 50%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: auto;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
 .btnContainer button{
-    width: 100px;
+    width: fit-content;
+    padding: 10px;
 }

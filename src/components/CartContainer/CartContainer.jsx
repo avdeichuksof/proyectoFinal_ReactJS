@@ -1,13 +1,11 @@
 import './cartContainer.css';
+import CartItem from '../CartItem/CartItem';
 import { Link } from 'react-router-dom';
 import { useCartContext } from '../../context/CartContextProvider';
-import CartItem from '../CartItem/CartItem';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import Checkout from './Checkout/Checkout';
 
 const CartContainer = () => {
     const { cart, precioTotal, vaciarCarrito } = useCartContext();
-
 
     if (cart.length == 0) {
         return (
@@ -20,19 +18,9 @@ const CartContainer = () => {
         )
     }
 
-    const buyMsg = () => toast.success("¡Compra realizada con éxito!", {
-            position: "bottom-right",
-            autoClose: 3000,
-            hideProgressBar: true,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-        });
-
     return (
         <div>
+            
             <div className='cartContainer'>
                 {cart.map(product =>
                     <CartItem key={product.id} product={product} />)}
@@ -43,22 +31,8 @@ const CartContainer = () => {
 
             <div className='btnContainer'>
                 <button onClick={() => vaciarCarrito()}>Vaciar carrito</button>
-                <button onClick={buyMsg}>Comprar</button>
-                <ToastContainer
-                    position="bottom-right"
-                    autoClose={3000}
-                    hideProgressBar={true}
-                    newestOnTop={false}
-                    closeButton={false}
-                    closeOnClick
-                    rtl={false}
-                    pauseOnFocusLoss
-                    draggable
-                    pauseOnHover
-                    theme="light"
-                    type="success"
-                />
             </div>
+            <Checkout />
         </div>
     )
 };
